@@ -75,7 +75,7 @@ body {
 
 @keyframes ani {
 	to {
-		box-shadow: 0 0 20px 20px #0f121a;
+		box-shadow: 0 0 20px 10px #333d59;
 	}
 }
 
