@@ -3,6 +3,10 @@ body {
 	padding-top: 10%;
 	cursor: url('assets/mouse.png'), auto;
 	position: relative;
+	background-image: url(assets/blue.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 
 * {
@@ -11,7 +15,7 @@ body {
 }
 
 #info {
-	background-image: url('assets/plate.png');
+	background-image: url('assets/new-plate.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 	position: absolute;
