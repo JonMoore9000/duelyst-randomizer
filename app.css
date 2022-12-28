@@ -1,0 +1,105 @@
+body {
+	background: #111827;
+	padding-top: 10%;
+}
+
+* {
+	font-family: 'Azeret Mono', monospace;
+	box-sizing: border-box;
+}
+
+.crest {
+	width: 350px;
+	margin-top: -10px;
+	margin-left: -10px;
+}
+
+.crest-shifted {
+	margin-top: -40px;
+}
+
+.results {
+	width: 350px;
+	margin: auto auto 60px auto;
+}
+
+.faction-wrapper {
+	width: 350px;
+	height: 350px;
+	overflow: hidden;
+	border-radius: 100%;
+	background: #101010;
+	border: 10px solid #1c273d;
+}
+
+.faction-name {
+	margin-top: -80px;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+}
+
+.picker {
+	margin: auto;
+	display: block;
+	background-image: url('assets/button_secondary.png');
+	background-size: cover;
+	border: none;
+	background-repeat: no-repeat;
+	color: #fff;
+	font-weight: 800;
+	font-size: 25px;
+	padding: 21px 60px 20px 60px;
+	text-align: center;
+	width: fit-content;
+	text-transform: uppercase;
+}
+
+.picker:hover {
+	cursor: pointer;
+	background-image: url('assets/button_secondary_glow.png');
+}
+
+.border-ani {
+	animation: ani;
+    animation-duration: .4s;
+    animation-iteration-count: 5;
+}
+
+.scale-ani {
+	animation: scale;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes ani {
+	to {
+		box-shadow: 0 0 20px 20px #0f121a;
+	}
+}
+
+@keyframes scale {
+	to {
+		transform: scale(1.05);
+	}
+}
+
+#jon {
+	text-align: center;
+	font-size: 13px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-top: 30px;
+}
+
+#jon a {
+	color: #db3b65;
+	text-decoration: none;
+	transition: linear .15s;
+}
+
+#jon a:hover {
+	opacity: .7;
+}
