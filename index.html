@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://kit.fontawesome.com/86d3a042a4.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="app.css">
 	  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;700&display=swap" rel="stylesheet"> 
 	<meta charset="utf-8">
@@ -9,12 +10,19 @@
 </head>
 <body>
 
+	<div id="info">
+		<p>Looking to shake up how you run Duelyst 2 tournaments? Want to add some randomness while challenging your friends? Just need help choosing a faction? Then this tool is for you!</p>
+	</div>
+
 <div class="results">
 	<div class='faction-wrapper'><img id="crest-avi" class='crest' src='assets/basic.png'/></div>
 	<h2 class="faction-name">Faction</h2>
 </div>
-<a class="picker">Choose</a>
-<p id="jon">Created by <a href="https://twitter.com/JontheNerd_" target="_blank">Jon</a></p>
+<div id="minibox">
+	<a class="picker">Choose</a>
+	<i class="fa-duotone fa-circle-info"></i>
+</div>
+<p id="jon">Created by <a id="jonlink" href="https://twitter.com/JontheNerd_" target="_blank">Jon</a></p>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script type="text/javascript" src="app.js"></script>

@@ -70,4 +70,8 @@ function choosePrism() {
     choosePrism();
 })
 
+  $('.fa-circle-info').on('click', function() {
+    $('#info').fadeToggle(750);
+})
+
 //setTimeout(choosePrism);
