@@ -1,7 +1,3 @@
-//window.onload = function(){
-  //document.getElementById("loading").style.display = "none";
-//}
-
 // array of options
 var factions = [
   {name: 'Lyonar', crest: 'assets/lyonar-crest.png', icon: 'elements/STR12x.png'},
@@ -11,24 +7,6 @@ var factions = [
   {name: 'Magmar', crest: 'assets/mag-crest.png', icon: 'elements/HRT12x.png'},
   {name: 'Vanar', crest: 'assets/van-crest.png', icon: 'elements/STR-AGI12x.png'}
 ]
-
-//var namer = "";
-
-//const img = document.getElementById('crest-avi');
-//img.src = "";
-
-// on click show result
-
-var images = ['assets/lyonar-crest.png', 
-  'assets/songhia-crest.png', 
-  'assets/vet-crest.png', 
-  'assets/abyss-crest.png', 
-  'assets/mag-crest.png', 
-  'assets/van-crest.png'];
-
-let index = 0;
-console.log(index);
-const imgElement = document.getElementById('crest-avi');
 
 function change() {
    imgElement.src = images[index];
@@ -43,9 +21,6 @@ function random() {
 function choosePrism() {
 
         var result = factions[Math.floor(Math.random()*factions.length)];
-       // var num = result.name;
-     // console.log(result);
-     // console.log(num);
       function displayResults() {
         $('.results').html(
           "<div class='faction-wrapper'><img class='crest' src='" + result.crest + "'/></div>"
@@ -62,16 +37,11 @@ function choosePrism() {
       }
       //showLoader();
       setTimeout(displayResults, 2000);
-
   };
-
   $('.picker').on('click', function() {
-    //random();
     choosePrism();
 })
 
   $('.fa-circle-info').on('click', function() {
     $('#info').fadeToggle(750);
 })
-
-//setTimeout(choosePrism);
